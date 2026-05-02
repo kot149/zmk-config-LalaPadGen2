@@ -6,26 +6,65 @@ manifest:
       url-base: https://github.com/ShiniNet/
     - name: caksoylar
       url-base: https://github.com/caksoylar
+    - name: badjeff
+      url-base: https://github.com/badjeff
+    - name: ssbb
+      url-base: https://github.com/ssbb
+    - name: kot149
+      url-base: https://github.com/kot149
   projects:
     # https://github.com/zmkfirmware/zmk
     - name: zmk
       remote: zmkfirmware
       revision: v0.3.0
       import: app/west.yml
+
     # https://github.com/ShiniNet/zmk-driver-iqs9151
     - name: zmk-driver-iqs9151
       remote: ShiniNet
       revision: main
       path: modules/zmk-driver-iqs9151
+
     # https://github.com/ShiniNet/zmk-easy-charge-indicator
     - name: zmk-easy-charge-indicator
       remote: ShiniNet
       revision: main
       path: modules/zmk-easy-charge-indicator
+
     # https://github.com/caksoylar/zmk-rgbled-widget
     - name: zmk-rgbled-widget
       remote: caksoylar
       revision: v0.3
       path: modules/zmk-rgbled-widget
+
+    # https://github.com/badjeff/zmk-input-processor-report-rate-limit
+    - name: zmk-input-processor-report-rate-limit
+      remote: badjeff
+      revision: f43f37aae7aaa7bf0ec4d432683b873a7e3a8efa # for v0.3-branch
+      path: modules/zmk-input-processor-report-rate-limit
+
+    # https://github.com/ssbb/zmk-listeners
+    - name: zmk-listeners
+      remote: ssbb
+      revision: v1
+      path: modules/zmk-listeners
+
+    # https://github.com/kot149/zmk-mouse-gesture
+    - name: zmk-mouse-gesture
+      remote: kot149
+      revision: v1
+      path: modules/zmk-mouse-gesture
+
+    # https://github.com/kot149/zmk-layout-shift
+    - name: zmk-layout-shift
+      remote: kot149
+      revision: v1
+      path: modules/zmk-layout-shift
+
+    # https://github.com/kot149/zmk-scroll-snap
+    - name: zmk-scroll-snap
+      remote: kot149
+      revision: v1
+      path: modules/zmk-scroll-snap
   self:
     path: config
