@@ -7,18 +7,25 @@ manifest:
     - name: caksoylar
       url-base: https://github.com/caksoylar
   projects:
+    # https://github.com/zmkfirmware/zmk
     - name: zmk
       remote: zmkfirmware
       revision: v0.3.0
       import: app/west.yml
+    # https://github.com/ShiniNet/zmk-driver-iqs9151
     - name: zmk-driver-iqs9151
       remote: ShiniNet
       revision: main
+      path: modules/zmk-driver-iqs9151
+    # https://github.com/ShiniNet/zmk-easy-charge-indicator
     - name: zmk-easy-charge-indicator
       remote: ShiniNet
       revision: main
+      path: modules/zmk-easy-charge-indicator
+    # https://github.com/caksoylar/zmk-rgbled-widget
     - name: zmk-rgbled-widget
       remote: caksoylar
       revision: v0.3
+      path: modules/zmk-rgbled-widget
   self:
     path: config
