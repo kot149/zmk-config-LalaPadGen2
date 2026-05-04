@@ -762,7 +762,7 @@
 &kp LCTRL                         &kp LEFT_WIN      &kp LEFT_ALT  &eager_tap_dance LANGUAGE_2 1  &lt_exit_alttab 3 SPACE  &lt_exit_alttab 4 TAB  &lt_exit_alttab 4 BACKSPACE  &lt_exit_alttab 2 ENTER  &lt_exit_alttab 2 ENTER  &mo CONFIGURATION       &none                &lt 9 ESCAPE
                                   &none             &kp RIGHT     &kp DOWN                       &kp LEFT                 &kp UP                 &kp UP                       &kp LEFT                 &kp DOWN                 &kp RIGHT               &none
 &mkp LCLK                         &mkp RCLK         &mkp MCLK                                                                                                                                                                   &mkp LCLK               &mkp RCLK            &mkp MCLK
-&mkp MB4                          &mkp MB5          &kp LG(TAB)   &kp LG(D)                      &kp LCTRL                                                                    &mkp MB4                 &mkp MB5                 &kp LG(TAB)             &kp LG(D)            &kp LCTRL
+&mkp MB4                          &mkp MB5          &kp LG(TAB)   &none                          &kp LCTRL                                                                    &kp LG(LC(LEFT))         &kp LG(LC(RIGHT))        &kp LG(TAB)             &none                &kp LCTRL
             >;
         };
 
