@@ -15,6 +15,7 @@
 #include <layout_shift_kp_override.dtsi>
 #include <mouse-gesture.dtsi>
 #include <scroll-snap.dtsi>
+
 #define DEFAULT 0
 #define LANG1_EAGER_TAP_DANCE 1
 #define NUMPAD_AND_ARROWS 2
@@ -78,59 +79,47 @@
 &mkp_input_listener { input-processors = <&zip_temp_layer MOUSE 10000>; };
 
 &zip_mouse_gesture {
-    stroke-size = <150>;
+    stroke-size = <250>;
     enable-eager-mode;
+    always-active;
+    movement-threshold = <0>;
+
+    rel-x-code = <INPUT_REL_HWHEEL>;
+    rel-y-code = <INPUT_REL_WHEEL>;
 
     history_back {
         pattern = <GESTURE_RIGHT>;
-        bindings = <&kp LA(LEFT)>;
+        bindings = <&kp LA(RIGHT)>;
     };
 
     history_forward {
         pattern = <GESTURE_LEFT>;
-        bindings = <&kp LA(RIGHT)>;
+        bindings = <&kp LA(LEFT)>;
     };
 
-    close_tab {
-        pattern = <GESTURE_DOWN GESTURE_RIGHT>;
-        bindings = <&kp LC(W)>;
-    };
-
-    new_tab {
-        pattern = <GESTURE_DOWN GESTURE_LEFT>;
-        bindings = <&kp LC(T)>;
-    };
-
-    app_switcher {
-        pattern = <GESTURE_DOWN GESTURE_UP>;
-        bindings = <&kp LG(TAB)>;
-    };
-
-    virtual_desktop_prev {
-        pattern = <GESTURE_LEFT GESTURE_DOWN>;
-        bindings = <&kp LG(LC(LEFT))>;
-    };
-
-    virtual_desktop_next {
-        pattern = <GESTURE_RIGHT GESTURE_DOWN>;
-        bindings = <&kp LG(LC(RIGHT))>;
-    };
-
-    // left {
-    //     gesture = <GESTURE_LEFT>;
-    //     bindings = <&kp LEFT>;
+    // close_tab {
+    //     pattern = <GESTURE_DOWN GESTURE_RIGHT>;
+    //     bindings = <&kp LC(W)>;
     // };
-    // right {
-    //     gesture = <GESTURE_RIGHT>;
-    //     bindings = <&kp RIGHT>;
+
+    // new_tab {
+    //     pattern = <GESTURE_DOWN GESTURE_LEFT>;
+    //     bindings = <&kp LC(T)>;
     // };
-    // up {
-    //     gesture = <GESTURE_UP>;
-    //     bindings = <&kp UP>;
+
+    // app_switcher {
+    //     pattern = <GESTURE_DOWN GESTURE_UP>;
+    //     bindings = <&kp LG(TAB)>;
     // };
-    // down {
-    //     gesture = <GESTURE_DOWN>;
-    //     bindings = <&kp DOWN>;
+
+    // virtual_desktop_prev {
+    //     pattern = <GESTURE_LEFT GESTURE_DOWN>;
+    //     bindings = <&kp LG(LC(LEFT))>;
+    // };
+
+    // virtual_desktop_next {
+    //     pattern = <GESTURE_RIGHT GESTURE_DOWN>;
+    //     bindings = <&kp LG(LC(RIGHT))>;
     // };
 };
 
