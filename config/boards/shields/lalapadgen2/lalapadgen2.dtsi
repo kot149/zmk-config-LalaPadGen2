@@ -27,6 +27,8 @@
 #define POS_TP_DOWN_R  66
 #define POS_TP_PINCH_R 67
 
+#define MOUSE 7
+
 / {
     chosen {
         zmk,physical-layout = &lalapadgen2_physical_layout;
@@ -166,6 +168,7 @@
                            <&zip_scroll_scaler 1 12>,
                            <&zip_dynamic_xy_scaler>,
                            <&zip_dynamic_scroll_scaler>,
+                           <&zip_temp_layer MOUSE 10000>,
                            <&zip_scroll_snap>,
                            <&zip_mouse_gesture>,
                            <&zip_report_rate_limit 15>;
@@ -176,6 +179,7 @@
                                 <&zip_scroll_scaler 1 40>,
                                 <&zip_dynamic_xy_scaler>,
                                 <&zip_dynamic_scroll_scaler>,
+                                <&zip_temp_layer MOUSE 10000>,
                                 <&zip_scroll_snap>,
                                 <&zip_mouse_gesture>,
                                 <&zip_report_rate_limit 15>;
@@ -190,6 +194,7 @@
                            <&zip_scroll_scaler 1 12>,
                            <&zip_dynamic_xy_scaler>,
                            <&zip_dynamic_scroll_scaler>,
+                           <&zip_temp_layer MOUSE 10000>,
                            <&zip_scroll_snap>,
                            <&zip_mouse_gesture>,
                            <&zip_report_rate_limit 15>;
@@ -200,6 +205,7 @@
                                 <&zip_scroll_scaler 1 40>,
                                 <&zip_dynamic_xy_scaler>,
                                 <&zip_dynamic_scroll_scaler>,
+                                <&zip_temp_layer MOUSE 10000>,
                                 <&zip_scroll_snap>,
                                 <&zip_mouse_gesture>,
                                 <&zip_report_rate_limit 15>;

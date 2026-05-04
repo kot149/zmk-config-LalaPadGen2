@@ -63,16 +63,16 @@
 &zip_temp_layer {
     require-prior-idle-ms = <200>;
     excluded-positions = <
-        18 // J
-        19 // K
-        20 // L
-        21 // ;
-        22 // Z
-        // 31 // .
-        // 32 // ,
-        // 33 // /
-        34 // Ctrl
-        42
+        13 // F
+        16 // J
+        17 // K
+        18 // L
+        19 // ;
+        20 // Z
+        // 27 // .
+        // 28 // ,
+        // 29 // /
+        30 // Ctrl
     >;
 };
 
@@ -829,13 +829,13 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans    &trans                                  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                  &trans  &mkp MB1  &td_rclick_close_tab_mouse_gesture 0 0  &none   &mo 9
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans    &trans                                  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans                                  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans                                  &trans
-&trans  &trans  &trans                                                    &trans                                  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans    &trans                                  &trans  &trans
+&trans  &trans  &trans  &trans   &trans                  &trans  &trans    &trans                                  &trans  &trans
+&trans  &trans  &trans  &mkp MB1 &trans                  &trans  &mkp MB1  &td_rclick_close_tab_mouse_gesture 0 0  &none   &mo 9
+&trans  &trans  &trans  &trans   &trans                  &trans  &trans    &trans                                  &trans  &trans
+&trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans    &trans                                  &trans  &trans
+        &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans    &trans                                  &trans
+&trans  &trans  &trans                                                     &trans                                  &trans  &trans
+&trans  &trans  &trans  &trans   &trans                  &trans  &trans    &trans                                  &trans  &trans
             >;
         };
 
