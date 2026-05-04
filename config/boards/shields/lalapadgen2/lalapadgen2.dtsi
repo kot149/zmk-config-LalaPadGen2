@@ -7,6 +7,7 @@
 #include "lalapadgen2-layouts.dtsi"
 #include <input/processors/report_rate_limit.dtsi>
 #include <mouse-gesture.dtsi>
+#include <scroll-snap.dtsi>
 
 #define POS_TP_LCLK_L  52
 #define POS_TP_RCLK_L  53
@@ -165,6 +166,7 @@
                            <&zip_scroll_scaler 1 12>,
                            <&zip_dynamic_xy_scaler>,
                            <&zip_dynamic_scroll_scaler>,
+                           <&zip_scroll_snap>,
                            <&zip_mouse_gesture>,
                            <&zip_report_rate_limit 15>;
         lowspeedmode {
@@ -174,6 +176,7 @@
                                 <&zip_scroll_scaler 1 40>,
                                 <&zip_dynamic_xy_scaler>,
                                 <&zip_dynamic_scroll_scaler>,
+                                <&zip_scroll_snap>,
                                 <&zip_mouse_gesture>,
                                 <&zip_report_rate_limit 15>;
         };
@@ -187,6 +190,7 @@
                            <&zip_scroll_scaler 1 12>,
                            <&zip_dynamic_xy_scaler>,
                            <&zip_dynamic_scroll_scaler>,
+                           <&zip_scroll_snap>,
                            <&zip_mouse_gesture>,
                            <&zip_report_rate_limit 15>;
         lowspeedmode {
@@ -196,6 +200,7 @@
                                 <&zip_scroll_scaler 1 40>,
                                 <&zip_dynamic_xy_scaler>,
                                 <&zip_dynamic_scroll_scaler>,
+                                <&zip_scroll_snap>,
                                 <&zip_mouse_gesture>,
                                 <&zip_report_rate_limit 15>;
         };
