@@ -12,6 +12,8 @@ manifest:
       url-base: https://github.com/ssbb
     - name: kot149
       url-base: https://github.com/kot149
+    - name: amgskobo
+      url-base: https://github.com/amgskobo
   projects:
     # https://github.com/zmkfirmware/zmk
     - name: zmk
@@ -66,5 +68,11 @@ manifest:
       remote: kot149
       revision: v1
       path: modules/zmk-scroll-snap
+
+    # https://github.com/kot149/zmk-input-inertia
+    - name: zmk-input-inertia
+      remote: kot149
+      revision: v0.3-branch-cancel-scroll-inertia-on-ctrl
+      path: modules/zmk-input-inertia
   self:
     path: config

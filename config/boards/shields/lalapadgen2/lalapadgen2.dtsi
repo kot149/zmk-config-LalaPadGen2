@@ -8,6 +8,7 @@
 #include <input/processors/report_rate_limit.dtsi>
 #include <mouse-gesture.dtsi>
 #include <scroll-snap.dtsi>
+#include <zmk-input-inertia/input/processor/input_inertia.dtsi>
 
 #define POS_TP_LCLK_L  52
 #define POS_TP_RCLK_L  53
@@ -172,6 +173,7 @@
             &zip_temp_layer MOUSE 10000
             &zip_scroll_snap
             &zip_mouse_gesture
+            &zip_inertia
             // &zip_report_rate_limit 15
         >;
         lowspeedmode {
@@ -185,6 +187,7 @@
                 &zip_temp_layer MOUSE 10000
                 &zip_scroll_snap
                 &zip_mouse_gesture
+                &zip_inertia
                 // &zip_report_rate_limit 15
             >;
         };
@@ -202,6 +205,7 @@
             &zip_temp_layer MOUSE 10000
             &zip_scroll_snap
             &zip_mouse_gesture
+            &zip_inertia
             // &zip_report_rate_limit 15
         >;
         lowspeedmode {
@@ -215,6 +219,7 @@
                 &zip_temp_layer MOUSE 10000
                 &zip_scroll_snap
                 &zip_mouse_gesture
+                &zip_inertia
                 // &zip_report_rate_limit 15
             >;
         };
@@ -258,4 +263,19 @@ status = "okay";
         status = "okay";
         irq-gpios = <&xiao_d 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
     };
+};
+
+&zip_inertia {
+    trigger-ms = <35>;
+    move-decay-factor-int = <90>;
+    move-report-interval-ms = <35>;
+    move-threshold-start = <10>;
+    move-threshold-stop = <1>;
+
+    scroll-decay-factor-int = <90>;
+    scroll-report-interval-ms = <35>;
+    scroll-threshold-start = <4>;
+    scroll-threshold-stop = <0>;
+
+    cancel-scroll-inertia-on-ctrl;
 };
