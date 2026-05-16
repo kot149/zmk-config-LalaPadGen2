@@ -266,15 +266,16 @@ status = "okay";
 };
 
 &zip_inertia {
-    trigger-ms = <35>;
-    move-decay-factor-int = <90>;
-    move-report-interval-ms = <35>;
-    move-threshold-start = <10>;
-    move-threshold-stop = <1>;
+    trigger-ms = <20>;
 
-    scroll-decay-factor-int = <90>;
-    scroll-report-interval-ms = <35>;
-    scroll-threshold-start = <4>;
+    move-decay-factor-int = <90>;
+    move-report-interval-ms = <10>;
+    move-threshold-start = <1>;
+    move-threshold-stop = <0>;
+
+    scroll-decay-factor-int = <95>;
+    scroll-report-interval-ms = <10>;
+    scroll-threshold-start = <1>;
     scroll-threshold-stop = <0>;
 
     cancel-scroll-inertia-on-ctrl;
