@@ -28,7 +28,7 @@
 #define POS_TP_DOWN_R  66
 #define POS_TP_PINCH_R 67
 
-#define MOUSE 7
+#define MOUSE 6
 
 / {
     chosen {

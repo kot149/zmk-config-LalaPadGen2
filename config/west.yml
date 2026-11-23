@@ -10,6 +10,8 @@ manifest:
       url-base: https://github.com/badjeff
     - name: ssbb
       url-base: https://github.com/ssbb
+    - name: urob
+      url-base: https://github.com/urob
     - name: kot149
       url-base: https://github.com/kot149
     - name: amgskobo
@@ -52,17 +54,29 @@ manifest:
       remote: ssbb
       revision: c240ceaf353d3138bea7695eef17049b7ade995b # v1 (2026-11-23)
       path: modules/zmk-listeners
+    # https://github.com/caksoylar/zmk-smart-toggle
+    - name: zmk-smart-toggle
+      remote: caksoylar
+      revision: 46e178221cccef965a511b772d7bc62800f1542e
+      path: modules/zmk-smart-toggle
+
+    # https://github.com/urob/zmk-adaptive-key
+    - name: zmk-adaptive-key
+      remote: urob
+      revision: 01ccc22889714f276c930dc960a989f80c9e0680
+      path: modules/zmk-adaptive-key
+
 
     # https://github.com/kot149/zmk-mouse-gesture
     - name: zmk-mouse-gesture
       remote: kot149
-      revision: 19de126099f19dd17376a2abe743066fe78458fe # v1 (2026-11-23)
+      revision: 5d80b4489fe6f22d6677984d72d445b5190ef36f # v2
       path: modules/zmk-mouse-gesture
 
     # https://github.com/kot149/zmk-layout-shift
     - name: zmk-layout-shift
       remote: kot149
-      revision: c7f0c6b199548b542dd543e8a0bf3e2c8941780f # v1 (2026-11-23)
+      revision: c242c13c9c5a6100b3980b8c725c734c368670de # v2
       path: modules/zmk-layout-shift
 
     # https://github.com/kot149/zmk-scroll-snap
