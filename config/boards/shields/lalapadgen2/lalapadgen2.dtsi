@@ -268,13 +268,13 @@ status = "okay";
 &zip_inertia {
     trigger-ms = <20>;
 
-    move-decay-factor-int = <90>;
-    move-report-interval-ms = <10>;
+    move-decay-factor-int = <84>;
+    move-report-interval-ms = <16>;
     move-threshold-start = <1>;
     move-threshold-stop = <0>;
 
-    scroll-decay-factor-int = <95>;
-    scroll-report-interval-ms = <10>;
+    scroll-decay-factor-int = <92>;
+    scroll-report-interval-ms = <16>;
     scroll-threshold-start = <1>;
     scroll-threshold-stop = <0>;
 
