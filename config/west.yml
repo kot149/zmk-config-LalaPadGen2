@@ -72,7 +72,7 @@ manifest:
     # https://github.com/kot149/zmk-input-inertia
     - name: zmk-input-inertia
       remote: kot149
-      revision: 6544ef352f4fc7846647b6b21f83879197d49e2a # v0.3-branch (2026-11-23)
+      revision: 43e874d9ddc0b6fc0d1ac6163c2164ba2b55fef0 # v0.3-branch (2026-11-23)
       path: modules/zmk-input-inertia
   self:
     path: config
