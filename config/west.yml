@@ -18,25 +18,25 @@ manifest:
     # https://github.com/zmkfirmware/zmk
     - name: zmk
       remote: zmkfirmware
-      revision: v0.3.0
+      revision: edf5c0814fd3ea202e43aad2d68fd32e882a518c # v0.3.0
       import: app/west.yml
 
     # https://github.com/ShiniNet/zmk-driver-iqs9151
     - name: zmk-driver-iqs9151
       remote: kot149
-      revision: feat/stop-scroll-inertia-on-modifier-press
+      revision: af9c4e3501eb72dcc30c282a078fc600c567d62e # feat/stop-scroll-inertia-on-modifier-press (2026-11-23)
       path: modules/zmk-driver-iqs9151
 
     # https://github.com/ShiniNet/zmk-easy-charge-indicator
     - name: zmk-easy-charge-indicator
       remote: ShiniNet
-      revision: main
+      revision: 8f23ef9faaf379f00c6ee0441a9e730d35663069 # main (2026-11-23)
       path: modules/zmk-easy-charge-indicator
 
     # https://github.com/caksoylar/zmk-rgbled-widget
     - name: zmk-rgbled-widget
       remote: caksoylar
-      revision: v0.3
+      revision: 8756cb7b8114069fa3c25c6f6c990f24988fceff # v0.3
       path: modules/zmk-rgbled-widget
 
     # https://github.com/badjeff/zmk-input-processor-report-rate-limit
@@ -48,31 +48,31 @@ manifest:
     # https://github.com/ssbb/zmk-listeners
     - name: zmk-listeners
       remote: ssbb
-      revision: v1
+      revision: c240ceaf353d3138bea7695eef17049b7ade995b # v1 (2026-11-23)
       path: modules/zmk-listeners
 
     # https://github.com/kot149/zmk-mouse-gesture
     - name: zmk-mouse-gesture
       remote: kot149
-      revision: v1
+      revision: 19de126099f19dd17376a2abe743066fe78458fe # v1 (2026-11-23)
       path: modules/zmk-mouse-gesture
 
     # https://github.com/kot149/zmk-layout-shift
     - name: zmk-layout-shift
       remote: kot149
-      revision: v1
+      revision: c7f0c6b199548b542dd543e8a0bf3e2c8941780f # v1 (2026-11-23)
       path: modules/zmk-layout-shift
 
     # https://github.com/kot149/zmk-scroll-snap
     - name: zmk-scroll-snap
       remote: kot149
-      revision: v1
+      revision: 6b2dccaab2d5b99ca8b79300b9a792fefb01c42d # v1 (2026-11-23)
       path: modules/zmk-scroll-snap
 
     # https://github.com/kot149/zmk-input-inertia
     - name: zmk-input-inertia
       remote: kot149
-      revision: v0.3-branch
+      revision: 6544ef352f4fc7846647b6b21f83879197d49e2a # v0.3-branch (2026-11-23)
       path: modules/zmk-input-inertia
   self:
     path: config
