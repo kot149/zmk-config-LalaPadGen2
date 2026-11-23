@@ -2,6 +2,7 @@
 #include <dt-bindings/zmk/input_transform.h>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <behaviors/rgbled_widget.dtsi>
+#include <behaviors/quick_scroll.dtsi>
 #include <input/processors/report_rate_limit.dtsi>
 
 
@@ -27,6 +28,10 @@
 #define MEDIA 8
 #define EXTRA_FINCTIONS 9
 #define CONFIGURATION 10
+
+&qmsc {
+    double-tap-ms = <350>;
+};
 
 &mt {
     tapping-term-ms = <200>;
@@ -73,6 +78,8 @@
         // 28 // ,
         // 29 // /
         30 // Ctrl
+        43 44 45 46 // Left directional switch
+        47 48 49 50 // Right directional switch
     >;
 };
 
@@ -749,7 +756,7 @@
 &mt LCTRL A                       &kp S             &kp D         &kp F                          &kp G                                                                        &kp H                    &kp J                    &mouse_gesture_kp 0 K   &kp L                &lt 9 MINUS
 &mt_exit_AML_on_tap LEFT_SHIFT Z  &mt LEFT_SHIFT X  &kp C         &kp V                          &kp B                                                                        &kp N                    &kp M                    &mod_morph_exclamation  &mod_morph_question  &mt LEFT_SHIFT SLASH
 &kp LCTRL                         &kp LEFT_WIN      &kp LEFT_ALT  &eager_tap_dance LANGUAGE_2 1  &lt_exit_alttab 3 SPACE  &lt_exit_alttab 4 TAB  &lt_exit_alttab 4 BACKSPACE  &lt_exit_alttab 2 ENTER  &lt_exit_alttab 2 ENTER  &mo CONFIGURATION       &none                &lt 9 ESCAPE
-                                  &none             &kp RIGHT     &kp DOWN                       &kp LEFT                 &kp UP                 &kp UP                       &kp LEFT                 &kp DOWN                 &kp RIGHT               &none
+                                  &none  &kp LG(LC(RIGHT))  &qmsc MOVE_Y(-120)  &kp LG(LC(LEFT))  &qmsc MOVE_Y(120)  &qmsc MOVE_Y(120)  &kp LA(LEFT)  &qmsc MOVE_Y(-120)  &kp LA(RIGHT)  &none
 &mkp LCLK                         &mkp RCLK         &mkp MCLK                                                                                                                                                                   &mkp LCLK               &mkp RCLK            &mkp MCLK
 &mkp MB4                          &mkp MB5          &kp LG(TAB)   &none                          &kp LCTRL                                                                    &kp LG(LC(LEFT))         &kp LG(LC(RIGHT))        &kp LG(TAB)             &none                &kp LCTRL
             >;
@@ -833,7 +840,7 @@
 &trans  &trans  &trans  &mkp MB1 &trans                  &trans  &mkp MB1  &td_rclick_close_tab_mouse_gesture 0 0  &none   &mo 9
 &trans  &trans  &trans  &trans   &trans                  &trans  &trans    &trans                                  &trans  &trans
 &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans    &trans                                  &trans  &trans
-        &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans    &trans                                  &trans
+        &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans                                                     &trans                                  &trans  &trans
 &trans  &trans  &trans  &trans   &trans                  &trans  &trans    &trans                                  &trans  &trans
             >;

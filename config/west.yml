@@ -14,6 +14,8 @@ manifest:
       url-base: https://github.com/kot149
     - name: amgskobo
       url-base: https://github.com/amgskobo
+    - name: BP
+      url-base: https://github.com/taichan1113
   projects:
     # https://github.com/zmkfirmware/zmk
     - name: zmk
@@ -74,5 +76,11 @@ manifest:
       remote: kot149
       revision: 43e874d9ddc0b6fc0d1ac6163c2164ba2b55fef0 # v0.3-branch (2026-11-23)
       path: modules/zmk-input-inertia
+
+    # https://github.com/taichan1113/zmk-behavior-quick-scroll
+    - name: zmk-behavior-quick-scroll
+      remote: BP
+      revision: aa679aa4aa51cb9c0d2281cf34567e9325a0333a # main (2026-11-23)
+      path: modules/zmk-behavior-quick-scroll
   self:
     path: config
